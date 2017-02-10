@@ -1,0 +1,83 @@
+<header class="m_header">
+    <a href="javascript:history.go(-1)">
+        <div class="m_scan">
+            <a href="javascript:history.go(-1)"><img lazy-src="img/img1/order-1.png" alt="" class="m_ico_sys"></a>
+        </div>
+    </a>
+    <p class="crazy_title">会员信息</p>
+</header>
+<section class="phone-information">
+    <div class="self">
+        <div class="self-information">
+            <div class="head-portrait"></div>
+            <div class="phones">
+                <a href="#/registOrLogin">
+                    <span>15011558870</span>
+                </a>
+                <a href="#/registOrLogin">
+                    <div class="self-phone">注册会员</div>
+                </a>
+            </div>
+        </div>
+        <div class="self-icons" ng-click="setting()"></div>
+    </div>
+    <ul class="collect">
+        <a href="###"><li><div class="commodity-collect collects"></div>商品收藏</li></a>
+        <a href="###"><li><div class="shop-collect collects"></div>店铺收藏</li></a>
+    </ul>
+</section>
+<section class="my-message">
+    <div class="myOrder">
+        <a href="#/view_order"><p><span><img src="img/img1/tap.png" alt="">查看全部订单</span>我的订单</p></a>
+    </div>
+    <!--个人信息-->
+    <ul class="self-message">
+        <a href="#/view_order"><li><div class="obligation messages"><img src="img/img1/pending-earning0.png" alt=""></div>待付款</li></a>
+        <a href="#/view_order"><li><div class="receive messages"><img src="img/img1/pending-earning1.png" alt=""></div>待收货</li></a>
+        <a href="#/view_order"><li><div class="evaluate messages"><img src="img/img1/pending-earning2.png" alt=""></div>待评价</li></a>
+        <a href="#/view_order"><li><div class="refund messages"><img src="img/img1/pending-earning3.png" alt=""></div>退款/售后</li></a>
+    </ul>
+    <!--中间信息-->
+    <div class="detailedInformation">
+        <ul class="information">
+            <li><a href="#/integral_exchange"><img src="img/img1/my-icons0.png" alt=""><div class="integral-mall informations">积分商场</div></a></li>
+            <li><a href="###"><img src="img/img1/my-icons1.png" alt=""><div class="discount-coupon informations">优惠券</div></a></li>
+            <li><a href="###"><img src="img/img1/my-icons2.png" alt=""><div class="shipping-address informations">收货地址</div></a></li>
+            <li><a href="###"><img src="img/img1/my-icons3.png" alt=""><div class="service informations">客服/反馈</div></a></li>
+            <li><a href="###"><img src="img/img1/my-icons4.png" alt=""><div class="about-us informations">关于我们</div></a></li>
+        </ul>
+    </div>
+    <button class="quit">退出当前账号</button>
+</section>
+<!--/* 设置用户信息 */-->
+<div class="setting">
+    <header class="m_header">
+        <div class="m_scan" ng-click="back()">
+            <img src="img/img1/order-1.png" alt="" class="m_ico_sys">
+        </div>
+        <p class="crazy_title">个人信息设置</p>
+    </header>
+    <div class="setting_main">
+        <ul class="setting_ul">
+            <li class="setting_head">
+                <span>头像</span>
+                <img src="img/img1/my-icon.jpg" alt="">
+            </li>
+            <li class="setting_name">
+                <span>昵称</span>
+                <p>11111111111</p>
+            </li>
+            <li class="setting_sex">
+                <span>性别</span>
+                <div class="sex_model">
+                    <input type="radio" id="1" name="rd" checked>男
+                    <input type="radio" id="2" name="rd">女
+                </div>
+            </li>
+            <li class="setting_age">
+                <span>年龄</span>
+                <p>23</p>
+            </li>
+        </ul>
+    </div>
+</div>

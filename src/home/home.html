@@ -1,0 +1,102 @@
+
+<div class="home_main">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="../../img/img/banner1.jpg"/>
+			</div>
+			<div class="swiper-slide">
+				<img src="../../img/img/banner2.jpg"/>
+			</div>
+			<div class="swiper-slide">
+				<img src="../../img/img/banner3.jpg"/>
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="home_search">
+		<input type="text" class="home_search_text" ng-model="foodName">
+		<span class="glyphicon glyphicon-search"></span>
+	</div>
+	<div class="notice">
+		<div class="notice_pic">
+			<img lazy-src="../../img/img/hotdot.jpg" alt="">
+		</div>
+		<div class="notice_icon">
+			<span class="glyphicon glyphicon-volume-up"></span>
+		</div>
+		<div class="notice_notice">
+			<ul>
+				<li>全球合伙人招募</li>
+				<li>春节物流停运通知</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu">
+		<ul>
+			<li ng-repeat="n in menuArr track by $index"><a ui-sref="home.hot"><img lazy-src="{{ n.img }}" alt=""><span>{{ n.name }}</span></li></a>
+		</ul>
+	</div>
+	<div class="shoplist">
+		<ul class="shoplist_ul">
+			<li><img lazy-src="../../img/img/menu1.jpg" alt=""></li>
+			<li><img lazy-src="../../img/img/menu2.jpg" alt=""></li>
+			<li><img lazy-src="../../img/img/menu3.jpg" alt=""></li>
+			<li><img lazy-src="../../img/img/menu4.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div class="shop">
+		<div class="shoptop" >
+			<img class="bussiness" lazy-src="../../img/img1/bussiness.png" alt="">
+			<ul class="shopul">
+				<li><a ui-sref="goods"><img lazy-src="../../img/img1/business.jpg" alt=""></a></li>
+				<li><a ui-sref="goods"><img lazy-src="../../img/img1/business1.jpg" alt=""></a></li>
+			</ul>
+			<ul class="shopul2">
+				<li><img lazy-src="../../img/img1/shop-select.png" alt=""><span>牛奶面包</span></li>
+				<li><img lazy-src="../../img/img1/shop-select1.png" alt=""><span>饮料酒水</span></li>
+				<li><img lazy-src="../../img/img1/shop-select2.png" alt=""><span>优选水果</span></li>
+				<li><a ui-sref="goods"><img lazy-src="../../img/img1/shop-select3.png" alt=""><span>更多</span></a></li>
+			</ul>
+		</div>
+		<div class="shopbottom">
+			<ul>
+				<li><img lazy-src="../../img/img1/shop-nav0.jpg" alt=""></li>
+				<li><img lazy-src="../../img/img1/shop-nav1.jpg" alt=""></li>
+				<li><img lazy-src="../../img/img1/shop-nav2.jpg" alt=""></li>
+				<li><img lazy-src="../../img/img1/shop-nav3.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div class="fruit" ng-repeat="key in msgArr track by $index">
+		<div class="com_head">
+			<p class="kuai"></p>
+			<p class="title">{{key[0].key}}</p>
+			<img lazy-src="../../img/img1/tap.png" class="tap"/>
+			<a ui-sref="goods"><p class="more">更多</p></a>
+		</div>
+		<div class="com_ad">
+			<img lazy-src="../../img/img1/fruit.jpg" alt="">
+		</div>
+		<div>
+			<ul class="com_ul">
+				<li class="com_li" ng-repeat="msg in key track by $index">
+					<a ui-sref="home">
+						<img lazy-src="{{ msg.img }}" alt="" class="com_pic">
+						<div class="info">
+							<p class="com_title">{{ msg.name }}</p>
+							<p class="com_desc">{{ msg.pm_desc }}</p>
+							<p>
+								<span class="d_price">{{ msg.price |currency:'￥' }}</span>
+								<span class="price">{{ msg.market_price |currency:'￥' }}</span>
+							</p>
+							<p class="com_add" ng-click="add($index)"><img lazy-src="../../img/img1/c1.png" alt=""></p>
+						</div>
+					</a>
+
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

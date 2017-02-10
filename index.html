@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>万国优品</title>
+	<link rel="stylesheet" href="src/common/reset.css">
+	<link rel="stylesheet" href="src/common/reset.css">
+	<link rel="stylesheet" href="src/common/main.css" media="screen" title="no title">
+	<link rel="stylesheet" href="src/home/home.css">
+	<link rel="stylesheet" href="src/home/swiper-3.4.0.min.css">
+	<!--<link rel="stylesheet" href="src/home/search_food.css">-->
+	<link rel="stylesheet" href="src/home/home.hot/home.hot.css">
+	<link rel="stylesheet" href="src/goods/goods.css">
+	<!--<link rel="stylesheet" href="src/fresh_reservation/join.css">-->
+	<!--<link rel="stylesheet" href="src/myOrder/myOrder.css">-->
+	<!--<link rel="stylesheet" href="src/myOrder/view_order.css">-->
+	<!--<link rel="stylesheet" href="src/myOrder/integral_exchange.css">-->
+	<!--<link rel="stylesheet" href="src/myOrder/registOrLogin.css">-->
+	<!--<link rel="stylesheet" href="src/shopping/shopping.css">-->
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="src/common/rem.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="src/home/swiper-3.4.0.min.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="node_modules/angular-css/angular-css.min.js"></script>
+	<script src="node_modules/me-lazyload.js"></script>
+</head>
+<body>
+<div>
+	<div class="content" ui-view>
+	</div>
+	<div class="footer">
+		<ul id="navigation">
+			<li><a ui-sref="home"><div class="home1 home_menu"><span class="glyphicon glyphicon-home"></span></div><span class="menuP">首页</span></a></li>
+			<li><a ui-sref="goods"><div class="home2 home_menu"><span class="glyphicon glyphicon-list"></span></div><span class="menuP">全部分类</span></a></li>
+			<li><a ui-sref="join"><div class="home3 home_menu"><span class="glyphicon glyphicon-fire"></span></div><span class="menuP">成为合伙人</span></a></li>
+			<li>
+				<a ui-sref="cart">
+					<div class="home4 home_menu">
+						<span class="glyphicon glyphicon-shopping-cart"></span></div><span class="menuP">购物车</span>
+				</a>
+				<p class="orderNum">{{ orderNum }}</p>
+			</li>
+			<li><a ui-sref="mine"><div class="home5 home_menu"><span class="glyphicon glyphicon-user"></span></div><span class="menuP">会员</span></a></li>
+		</ul>
+	</div>
+</div>
+<script src="index_js.js"></script>
+<script src="src/home/home_js.js"></script>
+<script src="src/goods/goods_js.js"></script>
+<script src="src/join/join_js.js"></script>
+<script src="src/cart/cart_js.js"></script>
+<script src="src/mine/mine_js.js"></script>
+</body>
+</html>

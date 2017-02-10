@@ -1,0 +1,89 @@
+<header class="m_header">
+    <a ui-sref="home">
+        <div class="m_scan">
+            <img lazy-src="img/img1/order-1.png" alt="" class="m_ico_sys">
+        </div>
+    </a>
+    <p class="crazy_title">疯狂秒杀</p>
+    <!--<a href="#/疯狂秒杀">-->
+    <div class="m_search" ng-click="refresh()">
+        <img lazy-src="img/img1/fresh.png" alt="" class="m_ico_search">
+    </div>
+    <!--</a>-->
+</header>
+<div class="crazy_content">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="piclazy-src in bannerPicArr">
+                <img lazy-src="{{ piclazy-src.activity.img }}"/>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination list"></div>
+    </div>
+    <div class="crazy_time">
+        <ul class="crazy_time_ul">
+            <li>
+                <p>10:00</p>
+                <p>已结束</p>
+                <div class="seckill">
+                    <img lazy-src="img/img1/seckill_04.png" alt="">
+                </div>
+            </li>
+            <li>
+                <p>12:00</p>
+                <p>已结束</p>
+                <div class="seckill">
+                    <img lazy-src="img/img1/seckill_04.png" alt="">
+                </div>
+            </li>
+            <li>
+                <p>15:00</p>
+                <p>已结束</p>
+                <div class="seckill">
+                    <img lazy-src="img/img1/seckill_04.png" alt="">
+                </div>
+            </li>
+            <li>
+                <p>18:00</p>
+                <p>已结束</p>
+                <div class="seckill">
+                    <img lazy-src="img/img1/seckill_04.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="countDown">
+        <div class="countDown_left"><img lazy-src="img/img1/crazy_bg.png" alt="">
+            <p>剧本场结束</p>
+            <p>02:23:34</p>
+
+        </div>
+        <p class="activity_rule">
+            查看游戏规则
+        </p>
+    </div>
+    <ul class="crazy_lis">
+        <li ng-repeat="obj in crazyArr track by $index">
+            <dl>
+                <dt>
+                    <img lazy-src="{{ obj.img }}" class="spike_pic">
+                </dt>
+                <dd>
+                    <p class="spike_name">{{ obj.name }}</p>
+                    <p>{{ obj.number }}</p>
+                    <p><span class="spike_price">{{ obj.price | currency:"￥" }}</span><span>/原价:{{ obj.market_price }}元</span></p>
+                    <p class="activity_rule" ng-click="add($index)">
+                        {{ obj.btnText }}
+                    </p>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<a ui-sref="cart">
+    <div class="shop_pic">
+        <p class="search_num"></p>
+    </div>
+</a>

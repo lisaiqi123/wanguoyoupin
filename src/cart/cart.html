@@ -1,0 +1,31 @@
+<div class="shop_head">
+    购物车
+</div>
+<div class="shop_main">
+    <ul class="shop_order_ul">
+        <li ng-repeat="obj in shopping track by $index">
+            <span class="shop_order_one"><input type="checkbox" ng-click="YesOrNo($index)"/></span>
+            <dl>
+                <dd><img src="{{ obj.img }}" alt=""></dd>
+                <dt>
+                <p class="shop_order_title">{{ obj.name }}</p>
+                <p class="shop_order_one_money">￥<span>{{ obj.price }}</span></p>
+                <div class="order_mul" ng-click="sub($index)">
+                    <img src="img/img1/jian.png" alt="">
+                </div>
+                <div class="order_num">{{ obj.count }}</div>
+                <div class="order_add" ng-click="add($index)">
+                    <img src="img/img1/c1.png" alt="">
+                </div>
+                </dt>
+            </dl>
+        </li>
+    </ul>
+</div>
+<div class="shop_order_count">
+    <div class="count_left">
+        <span class="count_all">全选<input type="checkbox"/></span>
+        <p><span class="count_money">0</span>共：</p>
+    </div>
+    <button>选好了</button>
+</div>

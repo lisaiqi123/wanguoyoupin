@@ -1,0 +1,159 @@
+.shop_head{
+    width: 100%;
+    height: 0.91rem;
+    border-bottom: 0.02rem solid #e0e0e0;
+    font-size: 0.26rem;
+    line-height: 0.91rem;
+    text-align: center;
+    font-weight: bold;
+    background: #ffffff;
+    position: fixed;
+    z-index: 10;
+}
+.shop_main{
+    width: 100%;
+    padding-top: 0.93rem;
+    overflow: auto;
+}
+.shop_order_ul li{
+    height: 1.6rem;
+    background: #ffffff;
+    padding: 0.2rem 0.32rem;
+    box-sizing: border-box;
+    border-bottom: 0.02rem solid #e0e0e0;
+}
+.shop_order_one{
+    display: inline-block;
+    float: left;
+    /*margin-right: 0.25rem;*/
+    float: left;
+    padding-top: 0.4rem;
+}
+.shop_order_one input{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: inline-block;
+    float: left;
+    margin-right: 0.1rem;
+    border-radius: 50%;
+    background: transparent;
+}
+.shop_order_ul li dl{
+    float: right;
+}
+.shop_order_ul li dd{
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.shop_order_ul li dd img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.shop_order_ul li dt{
+    float: left;
+    width: 4.05rem;
+    height: 1.2rem;
+    position: relative;
+    padding: 0.1rem 0 0 0.2rem;
+    box-sizing: border-box;
+}
+.order_add{
+    position: absolute;
+    top: 0.65rem;
+    right: 0rem;
+    width: 0.43rem;
+    height: 0.43rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+}
+.order_add img{
+    position: absolute;
+    top: 0.09rem;
+    right: 0.09rem;
+    width: 0.25rem;
+    height: 0.25rem;
+}
+.order_mul{
+    position: absolute;
+    top: 0.65rem;
+    right: 1rem;
+    width: 0.43rem;
+    height: 0.43rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+}
+.order_mul img{
+    position: absolute;
+    top: 0.09rem;
+    right: 0.09rem;
+    width: 0.25rem;
+    height: 0.25rem;
+}
+.order_num{
+    position: absolute;
+    top: 0.70rem;
+    right: 0.4rem;
+    width: 0.43rem;
+    height: 0.43rem;
+    font-size: 0.3rem;
+    font-weight: bold;;
+}
+
+.shop_order_title{
+    font-size: 0.25rem;
+    color: #333333;
+    margin-bottom: 0.47rem;
+}
+.shop_order_one_money{
+    font-size: 0.23rem;
+    color: #333333;
+}
+.shop_order_count{
+    postion:fixed;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    background: #ffffff;
+    padding: 0 0 0 0.32rem;
+    box-sizing: border-box;
+    float: left;
+}
+.count_left{
+    float: left;
+    width: 4rem;
+    height: 0.68rem;
+    line-height:0.68rem;
+    padding-top: 0.30rem;
+    box-sizing: border-box;
+}
+.count_all{
+    display: inline-block;
+    font-size: 0.25rem;
+    float: left;
+    margin-right: 0.56rem;
+}
+.count_all input{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: inline-block;
+    float: left;
+    margin-top: 0.32rem;
+    margin-right: 0.1rem;
+}
+.count_left p{
+    font-size: 0.25rem;
+    float: left;
+}
+.count_money{
+    font-size:0.25rem;
+    color: #e64f1a;
+    float: right;
+}
+.shop_order_count button{
+    float: right;
+    width: 2rem;
+    height: 1rem;
+    border:none;
+    background-color: #ffd600;
+}
