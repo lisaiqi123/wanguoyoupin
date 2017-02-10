@@ -7,7 +7,8 @@ angular.module("app",
 	"goodsPage",
 	"joinPage",
 	"cartPage",
-	"minePage"])
+	"minePage",
+	"detailPage"])
 	.config(function($stateProvider,$urlRouterProvider){
 
 	    $urlRouterProvider.otherwise('/home')

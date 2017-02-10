@@ -46,57 +46,50 @@
 			<li><img lazy-src="../../img/img/menu4.jpg" alt=""></li>
 		</ul>
 	</div>
-	<div class="shop">
-		<div class="shoptop" >
-			<img class="bussiness" lazy-src="../../img/img1/bussiness.png" alt="">
-			<ul class="shopul">
-				<li><a ui-sref="goods"><img lazy-src="../../img/img1/business.jpg" alt=""></a></li>
-				<li><a ui-sref="goods"><img lazy-src="../../img/img1/business1.jpg" alt=""></a></li>
-			</ul>
-			<ul class="shopul2">
-				<li><img lazy-src="../../img/img1/shop-select.png" alt=""><span>牛奶面包</span></li>
-				<li><img lazy-src="../../img/img1/shop-select1.png" alt=""><span>饮料酒水</span></li>
-				<li><img lazy-src="../../img/img1/shop-select2.png" alt=""><span>优选水果</span></li>
-				<li><a ui-sref="goods"><img lazy-src="../../img/img1/shop-select3.png" alt=""><span>更多</span></a></li>
-			</ul>
-		</div>
-		<div class="shopbottom">
-			<ul>
-				<li><img lazy-src="../../img/img1/shop-nav0.jpg" alt=""></li>
-				<li><img lazy-src="../../img/img1/shop-nav1.jpg" alt=""></li>
-				<li><img lazy-src="../../img/img1/shop-nav2.jpg" alt=""></li>
-				<li><img lazy-src="../../img/img1/shop-nav3.png" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div class="fruit" ng-repeat="key in msgArr track by $index">
-		<div class="com_head">
-			<p class="kuai"></p>
-			<p class="title">{{key[0].key}}</p>
-			<img lazy-src="../../img/img1/tap.png" class="tap"/>
-			<a ui-sref="goods"><p class="more">更多</p></a>
-		</div>
-		<div class="com_ad">
-			<img lazy-src="../../img/img1/fruit.jpg" alt="">
-		</div>
-		<div>
-			<ul class="com_ul">
-				<li class="com_li" ng-repeat="msg in key track by $index">
-					<a ui-sref="home">
-						<img lazy-src="{{ msg.img }}" alt="" class="com_pic">
-						<div class="info">
-							<p class="com_title">{{ msg.name }}</p>
-							<p class="com_desc">{{ msg.pm_desc }}</p>
-							<p>
-								<span class="d_price">{{ msg.price |currency:'￥' }}</span>
-								<span class="price">{{ msg.market_price |currency:'￥' }}</span>
-							</p>
-							<p class="com_add" ng-click="add($index)"><img lazy-src="../../img/img1/c1.png" alt=""></p>
-						</div>
-					</a>
-
-				</li>
-			</ul>
-		</div>
-	</div>
+	<homelist-title title="限量秒杀" name="glyphicon glyphicon-flash"></homelist-title>
+	<homelist-title  title="年货提前屯" name="glyphicon glyphicon-gift"></homelist-title>
+	<ul class="home_list">
+		<li ng-repeat="arr in homeArr1" ng-click="homelistClick(arr.id)" data-id="{{ arr.id }}">
+			<a ui-sref="detail">
+			<div class="list_pic">
+				<img class="list_pic_img" lazy-src="{{ arr.thumb }}" alt="">
+				<img class="hot_pic" lazy-src="../../img/img/goodsicon-hotsale.png" alt="">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title">{{ arr.title }}</p>
+				<p class="list_intro_price">{{ arr.marketprice | currency:"￥" }}</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+			</a>
+		</li>
+	</ul>
+	<homelist-title  title="新品上市" name="glyphicon glyphicon-leaf"></homelist-title>
+	<ul class="home_list">
+		<li ng-repeat="arr in homeArr1" data-id="{{ arr.id }}">
+			<div class="list_pic">
+				<img class="list_pic_img" lazy-src="{{ arr.thumb }}" alt="">
+				<img class="hot_pic" lazy-src="../../img/img/goodsicon-isnew.png" alt="">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title">{{ arr.title }}</p>
+				<p class="list_intro_price">{{ arr.marketprice | currency:"￥" }}</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li>
+	</ul>
+	<homelist-title  title="热卖商品" name="glyphicon glyphicon-fire"></homelist-title>
+	<ul class="home_list">
+		<li ng-repeat="arr in homeArr3" data-id="{{ arr.id }}">
+			<div class="list_pic">
+				<img class="list_pic_img" lazy-src="{{ arr.thumb }}" alt="">
+				<img class="hot_pic" lazy-src="../../img/img/goodsicon-recommand.png" alt="">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title">{{ arr.title }}</p>
+				<p class="list_intro_price">{{ arr.marketprice | currency:"￥" }}</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li>
+	</ul>
+	<img class="lastPic" lazy-src="../../img/img/lastPic.jpg" alt="">
 </div>

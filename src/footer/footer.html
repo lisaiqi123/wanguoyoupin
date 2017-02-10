@@ -1,0 +1,35 @@
+<style>
+.index-page{
+  width: 100%;
+  height: 100%;
+  background: #eea;
+  margin-top: -21px;
+}
+footer{
+  width: 100%;
+  height:50px;
+  position: fixed;
+  bottom:0;
+  z-index: 999;
+}
+
+</style>
+<div>
+    <div class="content" ui-view>
+    </div>
+    <div class="footer">
+        <ul id="navigation">
+            <li><a ui-sref="home"><div class="home1 home_menu"><span class="glyphicon glyphicon-home"></span></div><span class="menuP">首页</span></a></li>
+            <li><a ui-sref="goods"><div class="home2 home_menu"><span class="glyphicon glyphicon-list"></span></div><span class="menuP">全部分类</span></a></li>
+            <li><a ui-sref="join"><div class="home3 home_menu"><span class="glyphicon glyphicon-fire"></span></div><span class="menuP">成为合伙人</span></a></li>
+            <li>
+                <a ui-sref="cart">
+                    <div class="home4 home_menu">
+                        <span class="glyphicon glyphicon-shopping-cart"></span></div><span class="menuP">购物车</span>
+                </a>
+                <p class="orderNum">{{ orderNum }}</p>
+            </li>
+            <li><a ui-sref="mine"><div class="home5 home_menu"><span class="glyphicon glyphicon-user"></span></div><span class="menuP">会员</span></a></li>
+        </ul>
+    </div>
+</div>

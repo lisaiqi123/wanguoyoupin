@@ -1,0 +1,37 @@
+.detail_top{
+    height: 0.88rem;
+    width: 1.7rem;
+    float: left;
+    line-height: 0.88rem;
+    text-align: center;
+}
+#m_scan{
+    margin-left: 0.64rem;
+}
+.detail_cont{
+    width: 100%;
+    padding-top: 0.88rem;
+}
+.detail_title{
+    width: 100%;
+    height: 1.02rem;
+    padding: 0.1rem;
+}
+.detail_title_p{
+    height: 0.82rem;
+    float: left;
+    width: 5rem;
+    border-right: 0.02rem solid #c0c0c0;
+}
+.detail_title_right{
+    height: 0.82rem;
+    width: 0.92rem;
+    float: left;
+    margin-left: 0.15rem;
+}
+.detail_title_right span{
+    margin-left: 0.29rem;
+}
+.detail_title_right p{
+    text-align: center;
+}
