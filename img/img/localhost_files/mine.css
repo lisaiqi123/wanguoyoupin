@@ -1,0 +1,256 @@
+/*头部*/
+.phone-information{
+    padding-top: 0.91rem;
+    width:100%;
+    /*height:2.70rem;*/
+    background:#f9031a;
+    position: fixed;
+}
+/*主体*/
+.my-message{
+    padding-top:2.7rem;
+    padding-bottom: 1.1rem;
+}
+.myOrder{
+    width: 100%;
+    /*height: 1.11rem;*/
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin: 0.7rem 0 0.05rem 0;
+}
+.myOrder p{
+    font-size: 0.26rem;
+    color: #333333;
+}
+.myOrder p span{
+    display: block;
+    float: right;
+    font-size: 0.26rem;
+    color: #9a9a9a;
+}
+.myOrder p span img{
+    display: block;
+    float: right;
+    width: 0.12rem;
+    font-size: 0.26rem;
+    margin-top: 0.09rem;
+    margin-left:0.1rem;
+    color: #9a9a9a;
+}
+.self{
+    width: 100%;
+    /*height:2rem;*/
+}
+.self-information{
+    padding-left:0.31rem;
+    padding-top:0.41rem;
+    font-size:0.21rem;
+    color:#fff;
+}
+.head-portrait{
+    width:1.18rem;
+    height:1.18rem;
+    float: left;
+    background:url("../../img/img1/my-icon.jpg") no-repeat 0 0;
+    background-size:100% 100%;
+
+}
+.phones{
+    float: left;
+    padding-left: 0.31rem;
+    padding-top: 0.16rem;
+}
+.phones span{
+    color: #ffffff;
+}
+.self-phone{
+    width:1.67rem;
+    height:0.58rem;
+    padding-left: 0.3rem;
+    -webkit-box-sizing: border-box;
+    background:url("../../img/img1/my-icon1.png") no-repeat 0 0;
+    background-size:100% 100%;
+    margin-top:0.17rem;
+    margin-left:-0.1rem;
+    line-height:0.58rem;
+    color:#e64f1a;
+    text-align: center;
+}
+.self-icons{
+    width:0.22rem;
+    height:0.39rem;
+    background:url("../../img/img1/my-icon2.png") no-repeat 0 0;
+    background-size:100% 100%;
+    float: right;
+    margin-right:0.4rem;
+    margin-top:0.4rem;
+}
+/*收藏*/
+.collect>a{
+    display: block;
+    width:50%;
+    height:0.7rem;
+    background:#f9031a;
+    font-size:0.22rem;
+    color:#fff;
+    padding-top:0.23rem;
+    box-sizing: border-box;
+    float: left;
+}
+.collect>a>li{
+    line-height:0.36rem;
+    border-right:0.02rem solid #fff;
+}
+.collect>a:nth-child(2) li{
+    border-right:none;
+}
+.collects{
+    width:0.36rem;
+    height:0.36rem;
+    margin-right:0.26rem;
+    margin-left:0.69rem;
+    margin-top:-0.02rem;
+    float: left;
+}
+.commodity-collect{
+    background:url("../../img/img1/my-icon3.png") no-repeat 0 0;
+    background-size:100% 100%;
+}
+.shop-collect{
+    background:url("../../img/img1/my-icon4.png") no-repeat 0 0;
+    background-size:100% 100%;
+}
+
+/*个人信息*/
+.self-message{
+    width:100%;
+    height:1.39rem;
+    background: #fff;
+}
+.self-message>a{
+    display: block;
+    width:25%;
+    height:1.39rem;
+    float: left;
+    text-align: center;
+}
+.self-message>a>li{
+    padding-top:0.4rem;
+    font-size:0.22rem;
+    color: #333333;
+}
+.messages{
+    width:0.64rem;
+    height:0.62rem;
+    margin:0 auto;
+}
+.messages img{
+    display: block;
+    width:0.4rem;
+    margin:0 auto;
+}
+/*详细信息*/
+.detailedInformation{
+    width:100%;
+    margin-top:0.2rem;
+    margin-bottom: 0.2rem;
+}
+.information{
+    width:100%;
+    background:#fff;
+}
+.information>li{
+    font-size:0.23rem;
+    color:#343434;
+    width: 100%;
+    height: 1rem;
+    line-height: 0.6rem;
+    padding: 0.2rem 0.15rem;
+    border-bottom:0.02rem solid #efefef;
+}
+.information>li:nth-child(1) {
+    border-top:0.02rem solid #efefef;
+}
+.information>li>a{
+    /*display: inline-block;*/
+}
+.informations{
+    font-size: 0.26rem;
+    color: #343434;
+}
+.information>li img{
+    width: 0.6rem;
+    float: left;
+    display: block;
+    margin-right: 0.1rem;
+}
+.quit{
+    display: block;
+    width: 100%;
+    height: 1rem;
+    margin-top: 2rem;
+    background: #ffffff;
+    border: none;
+    font-size: 0.3rem;
+    color: #ff0400;
+    line-height: 1rem;
+}
+
+/*设置蒙版*/
+.setting{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 6;
+    background: #efefef;
+    display: none;
+}
+.setting_main{
+    width: 100%;
+}
+.setting_ul{
+    padding: 0.91rem 0.13rem 0 0.13rem;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    background: #ffffff;
+}
+.setting_ul li{
+    height:0.9rem;
+    line-height:0.9rem;
+    width: 100%;
+    font-size: 0.26rem;
+    border-bottom: 0.02rem solid #ccc;
+    background: url("../../img/img1/tap.png") no-repeat right 0.3rem ;
+}
+.setting_ul li span{
+    display: inline-block;
+    float: left;
+    font-size: 0.26rem;
+    color: #333333;
+}
+.setting_ul li p{
+    font-size: 0.26rem;
+    float: right;
+    padding-right: 0.3rem;
+}
+.setting_ul li img{
+    width: 0.7rem;
+    height: 0.7rem;
+    display: block;
+    float: right;
+    margin-right: 0.3rem;
+    margin-top: 0.1rem;
+    background-color: #333333;
+    border-radius: 50%;
+}
+.sex_model{
+    float: right;
+    padding-right: 0.3rem;
+}
+.setting_ul li input{
+    font-size: 0.26rem;
+    padding-right: 0.3rem;
+}
+

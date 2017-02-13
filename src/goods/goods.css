@@ -58,14 +58,6 @@ main{
     position: absolute;
     width: 2.1rem;
 }
-.left_tiao{
-    height: 0.68rem;
-    width: 0.05rem;
-    background: #f78631;
-    position: absolute;
-    top: 0.02rem;
-    left: 0;
-}
 .left_ul li{
     background: #f8f8f8;
     width: 2.1rem;
@@ -78,12 +70,9 @@ main{
     color: #6d6d6d;
     position: relative;
 }
-.left_ul li img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0.46rem;
-    height: 0.46rem;
+#left_li a{
+    text-decoration: none;
+    color: inherit;
 }
 /*右边*/
 .right{

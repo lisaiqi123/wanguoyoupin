@@ -1,3 +1,10 @@
+<style>
+    #left_li .active_list{
+        color: #fd5454;
+        border-left: 0.04rem solid #fd5454;
+        background-color: #ffffff;
+    }
+</style>
 <header class="m_header">
     <div class="m_scan">
         <a href="javascript:history.go(-1)"><img lazy-src="img/img1/order-1.png" alt="" class="m_ico_sys"></a>
@@ -7,54 +14,10 @@
 </header>
 <main>
     <div class="left" auto-height>
-        <ui class="left_ul">
-            <li><a ui-sref="goods.recommend">推荐列表</a></li>
-            <li ng-repeat="x in arr"><a ng-click="click(x.id)"  ui-sref="goods.pro({id:x.id})">{{x.name}}</a></li>
-            <div class="left_tiao"></div>
+        <ui class="left_ul" id="left_li">
+            <li ui-sref-active="active_list"><a ui-sref="index.goods.recommend">推荐列表</a></li>
+            <li ui-sref-active="active_list" ng-repeat="x in arr"><a ui-sref="index.goods.pro({id:x.id})">{{x.name}}</a></li>
         </ui>
     </div>
-    <div class="right" ui-view auto-height>
-        <ul class="recommend_ul">
-            <li><a ui-sref="goods">
-                <div class="recommend_pic">
-                    <span class="glyphicon glyphicon-th-list"></span>
-                </div>
-                <div class="recommend_title">
-                    <p>所有商品</p>
-                </div>
-            </a></li>
-            <li><a ui-sref="goods">
-                <div class="recommend_pic">
-                    <img lazy-src="../../../img/img/recommend1.jpg" alt="">
-                </div>
-                <div class="recommend_title">
-                    <p>旅游</p>
-                </div>
-            </a></li>
-            <li><a ui-sref="goods">
-                <div class="recommend_pic">
-                    <img lazy-src="../../../img/img/recommend2.jpg" alt="">
-                </div>
-                <div class="recommend_title">
-                    <p>旅游</p>
-                </div>
-            </a></li>
-            <li><a ui-sref="goods">
-                <div class="recommend_pic">
-                    <img lazy-src="../../../img/img/recommend3.jpg" alt="">
-                </div>
-                <div class="recommend_title">
-                    <p>旅游</p>
-                </div>
-            </a></li>
-            <li><a ui-sref="goods">
-                <div class="recommend_pic">
-                    <img lazy-src="../../../img/img/recommend4.jpg" alt="">
-                </div>
-                <div class="recommend_title">
-                    <p>旅游</p>
-                </div>
-            </a></li>
-        </ul>
-    </div>
+    <div class="right" ui-view auto-height></div>
 </main>

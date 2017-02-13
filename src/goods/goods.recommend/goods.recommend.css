@@ -23,7 +23,8 @@
     line-height: 0.88rem;
     margin-left: 0.44rem;
 }
-.recommend_title{
+#recommend_title{
+    text-decoration: none;
     height: 0.48rem;
     width: 100%;
     line-height: 0.48rem;

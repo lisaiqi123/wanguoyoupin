@@ -1,12 +1,13 @@
 angular.module("homePage",[])
 	.config(function($stateProvider){
 		$stateProvider
-			.state("home",{
+			.state({
+				name:"index.home",
 				url:'/home',
 				templateUrl:'src/home/home.html',
 				controller:"homeCtrl"
 			})
-			.state("home.hot",{
+			.state({name:"index.home.hot",
 				url:'/home.hot',
 				templateUrl:'src/home/home.hot/home.hot.html',
 				css:{
@@ -15,7 +16,7 @@ angular.module("homePage",[])
 				}
 			})
 	})
-	.controller("homeCtrl",function($scope,$interval,$http,$document){
+	.controller("homeCtrl",function($scope,$interval,$http){
 		//进入home页面
 		$("#navigation li").eq(0).find("a").css({"color":"#f9031a"});
 		for(var j = 0; j < $(".home_menu").length; j++){
@@ -59,7 +60,6 @@ angular.module("homePage",[])
 				if(index < 4){
 					arr1.push(ele);
 				}
-				console.log(ele)
 			})
 			$scope.homeArr1 = arr1;
 		})
@@ -72,6 +72,10 @@ angular.module("homePage",[])
 		$scope.homelistClick = function (index) {
 			console.log(index);
 		}
+		
+		$scope.searchFocus = function () {
+			console.log("foucus");
+		}
 
 	})
 	.directive("homelistTitle",function () {
@@ -79,9 +83,19 @@ angular.module("homePage",[])
 			restrict:'EC',
 			replace:true,
 			scope:{
-				title:"@",
-				name:'@'
+				title: "@",
+				name: "@"
 			},
 			template:'<div class="homelisttitle"><span class="{{name}}"></span>{{title}}</div>'
+		}
+	})
+	.directive("searchFocus",function(){
+		return{
+			link:function(scope,element,attrs){
+				angular.element(element).on("focus",function(){
+					this.style.width = "80%";
+					$(".search_btn").css({"display":"inline-block"});
+				})
+			}
 		}
 	})

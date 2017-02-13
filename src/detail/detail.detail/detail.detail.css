@@ -1,0 +1,141 @@
+.detail_top{
+    height: 0.88rem;
+    width: 1.7rem;
+    float: left;
+    line-height: 0.88rem;
+    text-align: center;
+}
+#m_scan{
+    margin-left: 0.64rem;
+}
+.detail_cont{
+    width: 100%;
+    padding-top: 0.88rem;
+}
+.detail_title{
+    width: 100%;
+    height: 1.02rem;
+    padding: 0.1rem;
+}
+.detail_title_p{
+    height: 0.82rem;
+    float: left;
+    width: 5rem;
+    border-right: 0.02rem solid #c0c0c0;
+}
+.detail_title_right{
+    height: 0.82rem;
+    width: 0.92rem;
+    float: left;
+    margin-left: 0.15rem;
+}
+.detail_title_right span{
+    margin-left: 0.29rem;
+}
+.detail_title_right p{
+    text-align: center;
+}
+.detail_subtitle{
+    width: 100%;
+    height: 0.76rem;
+    padding:0 0.1rem;
+}
+.detail_subtitle_p{
+    height: 0.76rem;
+    line-height: 0.76rem;
+    color: #ef4f4f;
+
+}
+.detail_money{
+    width: 100%;
+    height: 0.62rem;
+    padding:0 0.1rem;
+}
+.detail_money_span1{
+    height: 0.62rem;
+    line-height: 0.62rem;
+    color: #ef4f4f;
+    font-size: 0.44rem;
+    font-weight:bold;
+    padding-right: 0.15rem;
+}
+.detail_money_span2{
+    height: 0.62rem;
+    line-height: 0.62rem;
+    color: #C0C0C0;
+    font-size: 0.26rem;
+    text-decoration: line-through;
+}
+.detail_ceil{
+    width: 100%;
+    height: 0.48rem;
+    padding:0 0.1rem 0.16rem;
+    color: #C0C0C0;
+    font-size: 0.28rem;
+    border-bottom: 0.02rem solid #c0c0c0;
+}
+.detail_ceil_span1{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.detail_ceil_span2{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+.detail-area{
+    width: 100%;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    padding:0 0.1rem;
+    color: #333;
+    font-size: 0.26rem;
+    border-bottom: 0.02rem solid #c0c0c0;
+}
+.detail_logo{
+    width: 100%;
+    padding: 0.2rem;
+    height: 1.4rem;
+}
+.detail_logo img{
+    width: 1rem;
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.detail_logo span{
+    font-size: 0.4rem;
+}
+.detail_cell{
+    width: 100%;
+    padding: 0.2rem;
+    height: 1.02rem;
+    text-align: center;
+}
+.detail_cell_div{
+    width: 33%;
+    padding: 0 0.2rem;
+    height: 1.02rem;
+    float: left;
+    text-align: center;
+}
+.detail_btn{
+    width: 100%;
+    padding: 0.2rem;
+    height: 0.88rem;
+    text-align: center;
+}
+.detail_btn span{
+    display: inline-block;
+    width: 1.6rem;
+    height: 0.48rem;
+    line-height:0.44rem;
+    border: 0.02rem solid #c0c0c0;
+    border-radius: 0.05rem;
+    text-align: center;
+    float: left;
+}
+.detail_btn span:nth-child(1){
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}

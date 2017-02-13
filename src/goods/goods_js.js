@@ -3,7 +3,7 @@
 angular.module("goodsPage",[])
     .config(function($stateProvider){
         $stateProvider
-            .state("goods",{
+            .state("index.goods",{
                 url:'/goods',
                 templateUrl:'src/goods/goods.html',
                 controller:'goodsCtrl',
@@ -12,15 +12,15 @@ angular.module("goodsPage",[])
                     persist:true
                 }
             })
-            .state('goods.recommend',{
+            .state('index.goods.recommend',{
                 url:'/recommend',
                 templateUrl:'src/goods/goods.recommend/goods.recommend.html',
-                css:{
-                    href:"src/goods/goods.recommend/goods.recommend.css",
-                    persist:true
-                }
+                // css:{
+                //     href:"src/goods/goods.recommend/goods.recommend.css",
+                //     persist:true
+                // }
             })
-            .state('goods.pro',{
+            .state('index.goods.pro',{
                 url:'/pro',
                 params:{
                     id:0

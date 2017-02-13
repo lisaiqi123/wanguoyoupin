@@ -16,7 +16,8 @@
 		<div class="swiper-pagination"></div>
 	</div>
 	<div class="home_search">
-		<input type="text" class="home_search_text" ng-model="foodName">
+		<input type="text" class="home_search_text" search-focus="searchFocus()" ng-model="foodName">
+		<a ui-sref="index.search" class="search_btn">搜索</a>
 		<span class="glyphicon glyphicon-search"></span>
 	</div>
 	<div class="notice">
@@ -28,8 +29,8 @@
 		</div>
 		<div class="notice_notice">
 			<ul>
-				<li>全球合伙人招募</li>
-				<li>春节物流停运通知</li>
+				<li><a ui-sref="index.join">全球合伙人招募</a></li>
+				<li><a ui-sref="">春节物流停运通知</a></li>
 			</ul>
 		</div>
 	</div>
@@ -50,7 +51,7 @@
 	<homelist-title  title="年货提前屯" name="glyphicon glyphicon-gift"></homelist-title>
 	<ul class="home_list">
 		<li ng-repeat="arr in homeArr1" ng-click="homelistClick(arr.id)" data-id="{{ arr.id }}">
-			<a ui-sref="detail">
+			<a ui-sref="detail.goods">
 			<div class="list_pic">
 				<img class="list_pic_img" lazy-src="{{ arr.thumb }}" alt="">
 				<img class="hot_pic" lazy-src="../../img/img/goodsicon-hotsale.png" alt="">

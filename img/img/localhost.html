@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:8888/#/index/home -->
+<html style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" href="./localhost_files/main.css" media="screen" title="no title">
+	<link rel="stylesheet" href="./localhost_files/home.css">
+	<link rel="stylesheet" href="./localhost_files/swiper-3.4.0.min.css">
+	<link rel="stylesheet" href="./localhost_files/detail.css">
+	<link rel="stylesheet" href="./localhost_files/home.hot.css">
+	<link rel="stylesheet" href="./localhost_files/goods.css">
+	<link rel="stylesheet" href="./localhost_files/footer.css">
+	<link rel="stylesheet" href="./localhost_files/mine.css">
+	<!--<link rel="stylesheet" href="src/myOrder/view_order.css">-->
+	<!--<link rel="stylesheet" href="src/myOrder/integral_exchange.css">-->
+	<!--<link rel="stylesheet" href="src/myOrder/registOrLogin.css">-->
+	<!--<link rel="stylesheet" href="src/shopping/shopping.css">-->
+	<link rel="stylesheet" href="./localhost_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./localhost_files/reset.css">
+	<script src="./localhost_files/rem.js"></script>
+	<script src="./localhost_files/jquery-1.12.3.js"></script>
+    <script src="./localhost_files/swiper-3.4.0.min.js"></script>
+	<script src="./localhost_files/angular.min.js"></script>
+	<script src="./localhost_files/angular-ui-router.min.js"></script>
+	<script src="./localhost_files/angular-css.min.js"></script>
+	<script src="./localhost_files/me-lazyload.js"></script>
+<!-- ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index --></head>
+<body ng-app="myApp" class="ng-scope">
+<!-- uiView: --><div ui-view="" class="ng-scope"><div class="index-page ng-scope">
+    <!-- uiView: --><div class="content ng-scope" ui-view="">
+<div class="home_main ng-scope">
+	<div class="swiper-container swiper-container-horizontal">
+		<div class="swiper-wrapper" style="transform: translate3d(-1280px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 320px;">
+				<img src="./localhost_files/banner3.jpg">
+			</div>
+			<div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 320px;">
+				<img src="./localhost_files/banner1.jpg">
+			</div>
+			<div class="swiper-slide" data-swiper-slide-index="1" style="width: 320px;">
+				<img src="./localhost_files/banner2.jpg">
+			</div>
+			<div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 320px;">
+				<img src="./localhost_files/banner3.jpg">
+			</div>
+		<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 320px;">
+				<img src="./localhost_files/banner1.jpg">
+			</div></div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+	</div>
+	<div class="home_search">
+		<input type="text" class="home_search_text ng-pristine ng-untouched ng-valid ng-empty" ng-model="foodName">
+		<span class="glyphicon glyphicon-search"></span>
+	</div>
+	<div class="notice">
+		<div class="notice_pic">
+			<img lazy-src="../../img/img/hotdot.jpg" alt="" class="ng-isolate-scope" src="./localhost_files/hotdot.jpg" style="opacity: 1;">
+		</div>
+		<div class="notice_icon">
+			<span class="glyphicon glyphicon-volume-up"></span>
+		</div>
+		<div class="notice_notice">
+			<ul style="top: 0px;">
+				<li>全球合伙人招募</li>
+				<li>春节物流停运通知</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu">
+		<ul>
+			<!-- ngRepeat: n in menuArr track by $index --><li ng-repeat="n in menuArr track by $index" class="ng-scope"><a ui-sref="home.hot"><img lazy-src="img/img/menu_1.png" alt="" class="ng-isolate-scope" src="./localhost_files/menu_1.png" style="opacity: 1;"><span class="ng-binding">新品</span></a></li><!-- end ngRepeat: n in menuArr track by $index --><li ng-repeat="n in menuArr track by $index" class="ng-scope"><a ui-sref="home.hot"><img lazy-src="img/img/menu_2.png" alt="" class="ng-isolate-scope" src="./localhost_files/menu_2.png" style="opacity: 1;"><span class="ng-binding">热卖</span></a></li><!-- end ngRepeat: n in menuArr track by $index --><li ng-repeat="n in menuArr track by $index" class="ng-scope"><a ui-sref="home.hot"><img lazy-src="img/img/menu_3.png" alt="" class="ng-isolate-scope" src="./localhost_files/menu_3.png" style="opacity: 1;"><span class="ng-binding">促销</span></a></li><!-- end ngRepeat: n in menuArr track by $index --><li ng-repeat="n in menuArr track by $index" class="ng-scope"><a ui-sref="home.hot"><img lazy-src="img/img/menu_4.png" alt="" class="ng-isolate-scope" src="./localhost_files/menu_4.png" style="opacity: 1;"><span class="ng-binding">订单</span></a></li><!-- end ngRepeat: n in menuArr track by $index --><li ng-repeat="n in menuArr track by $index" class="ng-scope"><a ui-sref="home.hot"><img lazy-src="img/img/menu_5.png" alt="" class="ng-isolate-scope" src="./localhost_files/menu_5.png" style="opacity: 1;"><span class="ng-binding">全部</span></a></li><!-- end ngRepeat: n in menuArr track by $index -->
+		</ul>
+	</div>
+	<div class="shoplist">
+		<ul class="shoplist_ul">
+			<li><img lazy-src="../../img/img/menu1.jpg" alt="" class="ng-isolate-scope" src="./localhost_files/menu1.jpg" style="opacity: 1;"></li>
+			<li><img lazy-src="../../img/img/menu2.jpg" alt="" class="ng-isolate-scope" src="./localhost_files/menu2.jpg" style="opacity: 1;"></li>
+			<li><img lazy-src="../../img/img/menu3.jpg" alt="" class="ng-isolate-scope" src="./localhost_files/menu3.jpg" style="opacity: 1;"></li>
+			<li><img lazy-src="../../img/img/menu4.jpg" alt="" class="ng-isolate-scope" src="./localhost_files/menu4.jpg" style="opacity: 1;"></li>
+		</ul>
+	</div>
+	<div class="homelisttitle ng-binding ng-isolate-scope" title="限量秒杀" name="glyphicon glyphicon-flash"><span class="glyphicon glyphicon-flash"></span>限量秒杀</div>
+	<div class="homelisttitle ng-binding ng-isolate-scope" title="年货提前屯" name="glyphicon glyphicon-gift"><span class="glyphicon glyphicon-gift"></span>年货提前屯</div>
+	<ul class="home_list">
+		<!-- ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" ng-click="homelistClick(arr.id)" data-id="2789" class="ng-scope">
+			<a ui-sref="detail.goods" href="http://localhost:8888/#/detail/detailGoods">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/12/f00CW7zA0JGv0GG4A6jJGng4K2z2v4.jpg" alt="" src="./localhost_files/f00CW7zA0JGv0GG4A6jJGng4K2z2v4.jpg" style="opacity: 1;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-hotsale.png" alt="" src="./localhost_files/goodsicon-hotsale.png" style="opacity: 1;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">Gerber嘉宝燕麦米粉2段婴儿辅食米糊227g</p>
+				<p class="list_intro_price ng-binding">￥38.50</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+			</a>
+		</li><!-- end ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" ng-click="homelistClick(arr.id)" data-id="2730" class="ng-scope">
+			<a ui-sref="detail.goods" href="http://localhost:8888/#/detail/detailGoods">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/11/pc0dCB16dII0gldGbUNDE0D06B0e0n.jpg" alt="" src="./localhost_files/pc0dCB16dII0gldGbUNDE0D06B0e0n.jpg" style="opacity: 1;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-hotsale.png" alt="" src="./localhost_files/goodsicon-hotsale.png" style="opacity: 1;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">荷兰牛栏奶粉铁罐装系列</p>
+				<p class="list_intro_price ng-binding">￥154.63</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+			</a>
+		</li><!-- end ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" ng-click="homelistClick(arr.id)" data-id="2347" class="ng-scope">
+			<a ui-sref="detail.goods" href="http://localhost:8888/#/detail/detailGoods">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/YObxEfJlFXL2vwow2Kzwfx5uj1q99sjL.jpg" alt="" src="./localhost_files/YObxEfJlFXL2vwow2Kzwfx5uj1q99sjL.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-hotsale.png" alt="" src="./localhost_files/goodsicon-hotsale.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国hipp喜宝益生菌系列婴幼儿奶粉</p>
+				<p class="list_intro_price ng-binding">￥144.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+			</a>
+		</li><!-- end ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" ng-click="homelistClick(arr.id)" data-id="2341" class="ng-scope">
+			<a ui-sref="detail.goods" href="http://localhost:8888/#/detail/detailGoods">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/bdqV0BQz6qI1qdv6yWkkB0tqBV1v8v5Y.jpg" alt="" src="./localhost_files/bdqV0BQz6qI1qdv6yWkkB0tqBV1v8v5Y.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-hotsale.png" alt="" src="./localhost_files/goodsicon-hotsale.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 2+段</p>
+				<p class="list_intro_price ng-binding">￥131.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+			</a>
+		</li><!-- end ngRepeat: arr in homeArr1 -->
+	</ul>
+	<div class="homelisttitle ng-binding ng-isolate-scope" title="新品上市" name="glyphicon glyphicon-leaf"><span class="glyphicon glyphicon-leaf"></span>新品上市</div>
+	<ul class="home_list">
+		<!-- ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" data-id="2789" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/12/f00CW7zA0JGv0GG4A6jJGng4K2z2v4.jpg" alt="" src="./localhost_files/f00CW7zA0JGv0GG4A6jJGng4K2z2v4.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-isnew.png" alt="" src="./localhost_files/goodsicon-isnew.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">Gerber嘉宝燕麦米粉2段婴儿辅食米糊227g</p>
+				<p class="list_intro_price ng-binding">￥38.50</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" data-id="2730" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/11/pc0dCB16dII0gldGbUNDE0D06B0e0n.jpg" alt="" src="./localhost_files/pc0dCB16dII0gldGbUNDE0D06B0e0n.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-isnew.png" alt="" src="./localhost_files/goodsicon-isnew.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">荷兰牛栏奶粉铁罐装系列</p>
+				<p class="list_intro_price ng-binding">￥154.63</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" data-id="2347" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/YObxEfJlFXL2vwow2Kzwfx5uj1q99sjL.jpg" alt="" src="./localhost_files/YObxEfJlFXL2vwow2Kzwfx5uj1q99sjL.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-isnew.png" alt="" src="./localhost_files/goodsicon-isnew.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国hipp喜宝益生菌系列婴幼儿奶粉</p>
+				<p class="list_intro_price ng-binding">￥144.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr1 --><li ng-repeat="arr in homeArr1" data-id="2341" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/bdqV0BQz6qI1qdv6yWkkB0tqBV1v8v5Y.jpg" alt="" src="./localhost_files/bdqV0BQz6qI1qdv6yWkkB0tqBV1v8v5Y.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-isnew.png" alt="" src="./localhost_files/goodsicon-isnew.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 2+段</p>
+				<p class="list_intro_price ng-binding">￥131.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr1 -->
+	</ul>
+	<div class="homelisttitle ng-binding ng-isolate-scope" title="热卖商品" name="glyphicon glyphicon-fire"><span class="glyphicon glyphicon-fire"></span>热卖商品</div>
+	<ul class="home_list">
+		<!-- ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2789" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/12/f00CW7zA0JGv0GG4A6jJGng4K2z2v4.jpg" alt="" src="./localhost_files/f00CW7zA0JGv0GG4A6jJGng4K2z2v4.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">Gerber嘉宝燕麦米粉2段婴儿辅食米糊227g</p>
+				<p class="list_intro_price ng-binding">￥38.50</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2730" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/11/pc0dCB16dII0gldGbUNDE0D06B0e0n.jpg" alt="" src="./localhost_files/pc0dCB16dII0gldGbUNDE0D06B0e0n.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">荷兰牛栏奶粉铁罐装系列</p>
+				<p class="list_intro_price ng-binding">￥154.63</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2347" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/YObxEfJlFXL2vwow2Kzwfx5uj1q99sjL.jpg" alt="" src="./localhost_files/YObxEfJlFXL2vwow2Kzwfx5uj1q99sjL.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国hipp喜宝益生菌系列婴幼儿奶粉</p>
+				<p class="list_intro_price ng-binding">￥144.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2341" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/bdqV0BQz6qI1qdv6yWkkB0tqBV1v8v5Y.jpg" alt="" src="./localhost_files/bdqV0BQz6qI1qdv6yWkkB0tqBV1v8v5Y.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 2+段</p>
+				<p class="list_intro_price ng-binding">￥131.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2339" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/3/2016/12/hsNuBN3xSXif3Sbmm1TF1Us9103jz1.jpg" alt="" src="./localhost_files/hsNuBN3xSXif3Sbmm1TF1Us9103jz1.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">英国牛栏cow&amp;gate系列</p>
+				<p class="list_intro_price ng-binding">￥450.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2340" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/xBx66SICEE416BSsgERa6XA1Vs4X4Avl.jpg" alt="" src="./localhost_files/xBx66SICEE416BSsgERa6XA1Vs4X4Avl.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 1+段</p>
+				<p class="list_intro_price ng-binding">￥131.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2337" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/QC50NJtT4pNVH0cBa4Ns4IaHsnNnoICi.jpg" alt="" src="./localhost_files/QC50NJtT4pNVH0cBa4Ns4IaHsnNnoICi.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 pre段</p>
+				<p class="list_intro_price ng-binding">￥179.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2333" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/CywZm0wiHNdZENrd4tWtmMeRSDt4nMU0.jpg" alt="" src="./localhost_files/CywZm0wiHNdZENrd4tWtmMeRSDt4nMU0.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 3段</p>
+				<p class="list_intro_price ng-binding">￥175.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2332" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/J364ufLuztzN4KzDZ3NN3F4l04T0d4Fz.jpg" alt="" src="./localhost_files/J364ufLuztzN4KzDZ3NN3F4l04T0d4Fz.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 2段</p>
+				<p class="list_intro_price ng-binding">￥175.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 --><li ng-repeat="arr in homeArr3" data-id="2331" class="ng-scope">
+			<div class="list_pic">
+				<img class="list_pic_img ng-isolate-scope" lazy-src="http://weixin.wgyp.com/attachment/images/2/2016/11/G2Fqn4L323LnSGE2y4T4GlLTL2l2gKY0.jpg" alt="" src="./localhost_files/G2Fqn4L323LnSGE2y4T4GlLTL2l2gKY0.jpg" style="opacity: 1; transition: opacity 1s;">
+				<img class="hot_pic ng-isolate-scope" lazy-src="../../img/img/goodsicon-recommand.png" alt="" src="./localhost_files/goodsicon-recommand.png" style="opacity: 1; transition: opacity 1s;">
+			</div>
+			<div class="list_intro">
+				<p class="list_intro_title ng-binding">德国爱他美奶粉 1段</p>
+				<p class="list_intro_price ng-binding">￥171.00</p>
+				<div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+			</div>
+		</li><!-- end ngRepeat: arr in homeArr3 -->
+	</ul>
+	<img class="lastPic ng-isolate-scope" lazy-src="../../img/img/lastPic.jpg" alt="" src="./localhost_files/lastPic.jpg" style="opacity: 1;">
+</div>
+</div>
+    <div class="footer">
+        <ul id="navigation">
+            <li><a ui-sref="index.home" href="http://localhost:8888/#/index/home" style="color: rgb(249, 3, 26);"><div class="home1 home_menu"><span class="glyphicon glyphicon-home"></span></div><span class="menuP">首页</span></a></li>
+            <li><a ui-sref="index.goods" href="http://localhost:8888/#/index/goods" style="color: rgb(156, 158, 156);"><div class="home2 home_menu"><span class="glyphicon glyphicon-list"></span></div><span class="menuP">全部分类</span></a></li>
+            <li><a ui-sref="index.join" href="http://localhost:8888/#/index/join" style="color: rgb(156, 158, 156);"><div class="home3 home_menu"><span class="glyphicon glyphicon-fire"></span></div><span class="menuP">成为合伙人</span></a></li>
+            <li>
+                <a ui-sref="index.cart" href="http://localhost:8888/#/index/cart" style="color: rgb(156, 158, 156);">
+                    <div class="home4 home_menu">
+                        <span class="glyphicon glyphicon-shopping-cart"></span></div><span class="menuP">购物车</span>
+                </a>
+                <!--<p class="orderNum">{{ orderNum }}</p>-->
+            </li>
+            <li><a ui-sref="index.mine" href="http://localhost:8888/#/index/mine" style="color: rgb(156, 158, 156);"><div class="home5 home_menu"><span class="glyphicon glyphicon-user"></span></div><span class="menuP">会员</span></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<script src="./localhost_files/index_js.js"></script>
+<script src="./localhost_files/home_js.js"></script>
+<script src="./localhost_files/goods_js.js"></script>
+<script src="./localhost_files/join_js.js"></script>
+<script src="./localhost_files/cart_js.js"></script>
+<script src="./localhost_files/mine_js.js"></script>
+<script src="./localhost_files/detail.goods.js"></script>
+<script src="./localhost_files/detail.detail.js"></script>
+<script src="./localhost_files/detail.comment.js"></script>
+
+
+</body></html>

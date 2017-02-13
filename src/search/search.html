@@ -1,0 +1,31 @@
+<header class="m_header">
+    <div class="m_scan">
+        <a href="javascript:history.go(-1)"><img lazy-src="img/img1/order-1.png" alt="" class="m_ico_sys"></a>
+    </div>
+    <input type="text" class="m_search_text" ng-model="foodName">
+    <!--<button>搜索</button>-->
+    <span class="glyphicon glyphicon-search" ng-click="searchbtn()"></span>
+</header>
+<div class="sort">
+    <ul class="sort_ul">
+        <li><a href="">综合</a></li>
+        <li><a href="">销量</a></li>
+        <li><a href="">价格</a></li>
+        <li><a href="">筛选</a></li>
+    </ul>
+</div>
+<ul class="home_list sort_list">
+    <li ng-repeat="arr in searchArr3" ng-click="homelistClick(arr.id)" data-id="{{ arr.id }}">
+        <a ui-sref="detail.goods">
+            <div class="list_pic">
+                <img class="list_pic_img" lazy-src="{{ arr.img }}" alt="">
+                <img class="hot_pic" lazy-src="../../img/img/goodsicon-hotsale.png" alt="">
+            </div>
+            <div class="list_intro">
+                <p class="list_intro_title">{{ arr.name }}</p>
+                <p class="list_intro_price">{{ arr.price | currency:"￥" }}</p>
+                <div class="list_span"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+            </div>
+        </a>
+    </li>
+</ul>
