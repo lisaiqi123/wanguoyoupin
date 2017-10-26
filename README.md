@@ -16,7 +16,7 @@ angular + nodejs + express + mongoose
 
 ## 项目运行
 
-git clone https://github.com/bailicangdu/vue2-manage  
+git clone https://github.com/lisaiqi123/wanguoyoupin.git
 
 打开mongodb
 步骤如下：
