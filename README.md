@@ -22,12 +22,9 @@ git clone https://github.com/bailicangdu/vue2-manage
 打开mongodb
 步骤如下：
 
-1、打开WebStorm
-
-2、运行终端cmd --> cd "C:\Program Files\MongoDB\Server\3.4\bin" -->  输入mongd --dbpath=F:\积云\我的\mongoose -->enter键运行（ps:此终端窗口不关闭）
-
-3、再次运行cmd终端 -->  cd "C:\Program Files\MongoDB\Server\3.4\bin" --> 输入 mongo，enter键运行（ps:此窗口不关闭）
-
+1、打开WebStorm/<br>
+2、运行终端cmd --> cd "C:\Program Files\MongoDB\Server\3.4\bin" -->  输入mongd --dbpath=F:\积云\我的\mongoose -->enter键运行（ps:此终端窗口不关闭）/<br>
+3、再次运行cmd终端 -->  cd "C:\Program Files\MongoDB\Server\3.4\bin" --> 输入 mongo，enter键运行（ps:此窗口不关闭）/<br>
 注释：如果想要查看mongoose里面的集合表，在第二个终端窗口输入show dbs
 
 创建表
@@ -46,20 +43,20 @@ npm run dev
 
 ##功能列表
 
- 登陆 -- 完成
+ *登陆 -- 完成
 
- 首页 -- 完成
+ *首页 -- 完成
 
- 商品列表 -- 完成
+ *商品列表 -- 完成
 
- 购物车 -- 完成
+ *购物车 -- 完成
 
- 加入我们 -- 完成
+ *加入我们 -- 完成
 
- 我的 -- 完成
+ *我的 -- 完成
 
- 个人设置 -- 完成
+ *个人设置 -- 完成
 
- 读取位置 -- 完成
+ *读取位置 -- 完成
 
  
