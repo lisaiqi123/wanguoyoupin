@@ -22,7 +22,7 @@ git clone https://github.com/lisaiqi123/wanguoyoupin.git
 步骤如下：<br>
 
 1、打开WebStorm<br>
-2、运行终端cmd --> cd "C:\Program Files\MongoDB\Server\3.4\bin" -->  输入mongd --dbpath=F:\积云\我的\mongoose -->enter键运行（ps:此终端窗口不关闭）<br>
+2、运行终端cmd --> cd "C:\Program Files\MongoDB\Server\3.4\bin" -->  输入mongd --dbpath=F:\我的\mongoose -->enter键运行（ps:此终端窗口不关闭）<br>
 3、再次运行cmd终端 -->  cd "C:\Program Files\MongoDB\Server\3.4\bin" --> 输入 mongo，enter键运行（ps:此窗口不关闭）/<br>
 注释：如果想要查看mongoose里面的集合表，在第二个终端窗口输入show dbs
 
